@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>1899.12.30 00:00:00.000.227,C:\Users\timof\Documents\Embarcadero\Studio\Projects\Project1.dproj=C:\Users\timof\Documents\Embarcadero\Studio\Projects\ITim.BatchGenerator.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.996,=C:\Users\timof\Documents\Embarcadero\Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.665,C:\Users\timof\Documents\Embarcadero\Studio\Projects\Unit1.pas=C:\Users\timof\Documents\Embarcadero\Studio\Projects\ITim.BatchGenerator.Main.pas</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.910,C:\Users\timof\Documents\Embarcadero\Studio\Projects\ITim.BatchGenerator.Main.dfm=C:\Users\timof\Desktop\ITim.BatchGenerator\ITim.BatchGenerator.Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.665,C:\Users\timof\Documents\Embarcadero\Studio\Projects\Unit1.dfm=C:\Users\timof\Documents\Embarcadero\Studio\Projects\ITim.BatchGenerator.Main.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.116,C:\Users\timof\Documents\Embarcadero\Studio\Projects\ITim.BatchGenerator.dproj=C:\Users\timof\Desktop\ITim.BatchGenerator\ITim.BatchGenerator.dproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.910,C:\Users\timof\Documents\Embarcadero\Studio\Projects\ITim.BatchGenerator.Main.pas=C:\Users\timof\Desktop\ITim.BatchGenerator\ITim.BatchGenerator.Main.pas</Transaction>
+  </Transactions>
+</BorlandProject>
