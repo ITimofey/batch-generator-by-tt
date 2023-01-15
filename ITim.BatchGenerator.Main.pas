@@ -16,18 +16,14 @@ uses
 
 type
   TBatchGenerator = class(TForm)
-    DriverDeviceName: TEdit;
-    BatchFileMakeButton: TButton;
     Label1: TLabel;
     Label2: TLabel;
-    BatchFileOperationType: TComboBox;
-    DriverDevicePath: TEdit;
     Label3: TLabel;
+    DriverDeviceName: TEdit;
+    DriverDevicePath: TEdit;
+    BatchFileOperationType: TComboBox;
+    BatchFileMakeButton: TButton;
     procedure BatchFileMakeButtonClick(Sender: TObject);
-  private
-    { Private declarations }
-  public
-    { Public declarations }
   end;
 
 var
