@@ -16,11 +16,13 @@ uses
 
 type
   TBatchGenerator = class(TForm)
-    DriverDeviceInstancePatch: TEdit;
+    DriverDeviceName: TEdit;
     BatchFileMakeButton: TButton;
     Label1: TLabel;
     Label2: TLabel;
     BatchFileOperationType: TComboBox;
+    DriverDevicePath: TEdit;
+    Label3: TLabel;
     procedure BatchFileMakeButtonClick(Sender: TObject);
   private
     { Private declarations }
@@ -40,24 +42,22 @@ implementation
 
 procedure TBatchGenerator.BatchFileMakeButtonClick(Sender: TObject);
 begin
-
-  // Алгоритм к реализации:
-  // 1) создать .txt-файл
-  // 2) открыть .txt-файл
-  // 3) записать туда содержимое в зависимости от заданной конфигурации
-  // 4) сохранить тектовый файл
-  // 5) переименовать текстовый файл в расширение .bat
-
   // Пример содержимого файла:
   // @echo off
   // pnputil /restart-device "USB\ROOT_HUB20\0&12345ABCDE&6"
   // exit
 
-  assignfile(BatchFile,'TestFile.txt');
-  rewrite(BatchFile);
-  write(BatchFile, 'Hello, world!');
-  closefile(BatchFile);
-
+  case BatchFileOperationType.ItemIndex of
+    0: begin
+      AssignFile(BatchFile, 'Restart_' + DriverDeviceName.Text + '.bat');
+      Rewrite(BatchFile);
+      write(BatchFile, '@echo off' + #13
+        + 'pnputil /restart-device "' + DriverDevicePath.Text + '"' + #13
+        + 'exit');
+      CloseFile(BatchFile);
+      ShowMessage('BATCH-файл создан успешно!');
+    end;
+  end;
 end;
 
 {$EndRegion}
